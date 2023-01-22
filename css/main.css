@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap");
+@import "./blocks.css";
+@import "./desktop-view.css";
+@import "./transitions.css";
+
+:root {
+    /* layout */
+    --desktop-font-size: 16px;
+    /* colors */
+    --dark-gray: hsl(0, 0%, 63%);
+    --black: hsl(0, 0%, 0%);
+    --white: hsl(0, 0%, 100%);
+    --very-dark-gray: hsl(0, 0%, 27%);
+    /* fontweight */
+    --light: 500;
+    --normal: 600;
+    --bold: 700;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: var(--desktop-font-size);
+}
+
+body {
+    font-family: "Spartan", sans-serif;
+    font-weight: var(--normal);
+    color: var(--dark-gray);
+}
+
+h1 {
+    font-weight: var(--bold);
+    font-size: 1.5rem;
+    /* padding-right: 2rem; */
+}
+
+h2,
+h3 {
+    color: var(--black);
+    font-weight: var(--bold);
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}

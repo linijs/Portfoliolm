@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap");
+@import "../transitions.css";
+
+:root {
+    /* layout */
+    --desktop-font-size: 16px;
+    /* colors */
+    --dark-gray: hsl(0, 0%, 63%);
+    --black: hsl(0, 0%, 0%);
+    --white: hsl(0, 0%, 100%);
+    --very-dark-gray: hsl(0, 0%, 27%);
+    /* fontweight */
+    --light: 500;
+    --normal: 600;
+    --bold: 700;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: var(--desktop-font-size);
+    scroll-behavior: smooth;
+    scroll-padding-top: 10rem;
+}
+
+body {
+    font-family: "Spartan", sans-serif;
+    font-weight: var(--normal);
+    color: var(--very-dark-gray);
+}
+
+h1 {
+    font-weight: var(--bold);
+    font-size: 1.5rem;
+    padding-right: 2rem;
+}
+
+h2,
+h3 {
+    color: var(--black);
+    font-weight: var(--bold);
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: var(--black);
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+/* ******************** */
+/* SECTION */
+/* ******************** */
+
+section div.text {
+    padding: 5rem 4rem;
+}
+
+section p {
+    font-size: 0.9rem;
+    line-height: 1.75;
+}
+
+section a {
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    /* letter-spacing: 10px; */
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--black);
+    outline-offset: 0.25rem;
+    margin-right: 1rem;
+
+    display: inline-block;
+}
+
+section a:hover {
+    color: var(--dark-gray);
+}
+/* ******************** */
+/* PROJECT SECTIONS */
+/* ******************** */
+
+h1 {
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 35px;
+    z-index: 100;
+}
+
+section div {
+    width: 100%;
+}
+
+section .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    width: 35%;
+
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+/* ******************** */
+/* PROJECT IMAGES */
+/* ******************** */
+
+.images {
+    width: 100%;
+
+    background-size: cover;
+    background-position: center;
+}
+
+.other-image {
+    display: block;
+    max-width: 100%;
+}
+
+/* ******************** */
+/* PROJECT TEXT BODY */
+/* ******************** */
+
+.section-content {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.section-footer {
+    display: flex;
+    flex-direction: row;
+}
+
+.technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 1rem;
+}
+
+.text-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.text-header {
+    text-align: justify;
+}
+
+/* ******************** */
+/* FOOTER */
+/* ******************** */
+
+.section-text-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 100vh;
+    width: 37.5%;
+}
+
+.text-footer-bottom {
+    display: flex;
+    justify-content: space-between;
+
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 2rem;
+}
+
+.footer-images {
+    width: 100%;
+
+    background-size: cover;
+    background-position: center;
+}
+
+.nakamais-projekts {
+    border-top: 1px solid black;
+}
+
+.other-image-footer {
+    height: 100vh;
+    display: block;
+    max-width: 100%;
+}
+
+/* ******************** */
+/* FOOTER STYLING */
+/* ******************** */
+
+.nakamais-projekts a {
+    display: flex;
+    align-items: baseline;
+    padding-left: 4rem;
+
+    gap: 10px;
+}
+
+.gadalaiki-image {
+    width: 100vw;
+}
+
+/* ******************** */
+/* MEDIA QUERIES */
+/* ******************** */
+
+@media (max-width: 1440px) {
+    h1 {
+        left: 48%;
+        transform: translateY(-50%) translateX(-50%);
+    }
+
+    section.section-content {
+        display: block;
+    }
+
+    .section-footer {
+        display: block;
+    }
+
+    .text-footer {
+        margin-top: 30px;
+    }
+
+    section.section-footer {
+        display: block;
+    }
+
+    section div {
+        width: 100%;
+    }
+
+    section div.text {
+        height: auto;
+        width: 100%;
+        position: static;
+    }
+
+    .images div.full-image {
+        height: 100vw;
+        width: auto;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .other-image-footer {
+        height: auto;
+    }
+
+    .section-text-footer {
+        height: 40vh;
+        width: 100%;
+    }
+}
