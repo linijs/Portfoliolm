@@ -66,6 +66,13 @@ a {
     color: var(--black);
 }
 
+p {
+    text-align: justify;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    word-spacing: -0.05em;
+}
+
 /* ******************** */
 /* SECTION */
 /* ******************** */
@@ -150,6 +157,8 @@ section .text {
 .section-footer {
     display: flex;
     flex-direction: row;
+
+    height: 100vh;
 }
 
 .technologies {
@@ -202,15 +211,16 @@ section .text {
     border-top: 1px solid black;
 }
 
+.footer-images {
+    display: flex;
+    flex-direction: column;
+}
+
 .other-image-footer {
     height: 100vh;
     display: block;
     max-width: 100%;
 }
-
-/* ******************** */
-/* FOOTER STYLING */
-/* ******************** */
 
 .nakamais-projekts a {
     display: flex;
@@ -220,8 +230,24 @@ section .text {
     gap: 10px;
 }
 
-.gadalaiki-image {
-    width: 100vw;
+/* ******************** */
+/* TEXT FADE ANIMATION */
+/* ******************** */
+
+.appear {
+    -webkit-transition: all 1.2s;
+    transition: all 1.2s;
+    opacity: 0;
+    -webkit-transform: translateY(-40px);
+    transform: translateY(-40px);
+}
+
+.appear.inview {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
 }
 
 /* ******************** */
@@ -240,14 +266,15 @@ section .text {
 
     .section-footer {
         display: block;
+        height: 0px;
+    }
+
+    .span-footer-img {
+        display: none;
     }
 
     .text-footer {
         margin-top: 30px;
-    }
-
-    section.section-footer {
-        display: block;
     }
 
     section div {
@@ -265,10 +292,6 @@ section .text {
         width: auto;
     }
 
-    hr {
-        display: none;
-    }
-
     .other-image-footer {
         height: auto;
     }
@@ -276,5 +299,21 @@ section .text {
     .section-text-footer {
         height: 40vh;
         width: 100%;
+    }
+
+    .text-footer-bottom a {
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 425px) {
+    section div.text {
+        padding: 5rem 2rem;
+    }
+    .text-footer-bottom {
+        padding: 2rem;
+    }
+    .nakamais-projekts a {
+        padding-left: 2rem;
     }
 }

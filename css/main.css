@@ -38,6 +38,7 @@ body {
 h1 {
     font-weight: var(--bold);
     font-size: 1.5rem;
+    background-blend-mode: difference;
     /* padding-right: 2rem; */
 }
 
@@ -52,4 +53,17 @@ h3 {
     font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 5px;
+}
+
+p {
+    text-align: justify;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    word-spacing: -0.05em;
+}
+
+@media (max-width: 425px) {
+    p {
+        text-align: left;
+    }
 }

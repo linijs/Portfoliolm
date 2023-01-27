@@ -21,8 +21,8 @@
         grid-row: 1 / 2;
         padding: 2.5rem 2rem;
 
-        /* background-position: 75% 75%; */
-        /* background-image: url("../bildes/mockuuups-dsQbNZVnQksGog3tiFCmLd.png"); */
+        background-color: black;
+        background-image: url("../bildes/Yelp_Camp/yelp-camp.webp");
     }
 
     .controls {
@@ -62,6 +62,8 @@
     .sazinies {
         grid-column: 4 / 5;
         grid-row: 2 / 3;
+
+        padding: 5rem 3rem;
     }
 
     .slide-header {
