@@ -21,8 +21,8 @@
         grid-row: 1 / 2;
         padding: 2.5rem 2rem;
 
-        background-color: black;
-        background-image: url("../bildes/Yelp_Camp/yelp-camp.webp");
+        background-color: white;
+        /* background-image: url("../bildes/Yelp_Camp/yelp-camp.webp"); */
     }
 
     .controls {
@@ -70,5 +70,10 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    .transition img {
+        vertical-align: -0.6rem;
+        /* display: inline-block; */
     }
 }
