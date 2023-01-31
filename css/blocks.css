@@ -51,6 +51,24 @@ header {
 }
 
 /* ******************** */
+/* SLIDES */
+/* ******************** */
+
+.slide-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slide-technologies {
+    display: flex;
+    gap: 10px;
+    font-size: 1rem;
+    color: black;
+}
+
+/* ******************** */
 /* SECTIONS */
 /* ******************** */
 
@@ -71,7 +89,6 @@ section p {
 section a {
     margin-top: 3rem;
     font-size: 0.9rem;
-    /* letter-spacing: 10px; */
     text-transform: uppercase;
     text-decoration: none;
     color: var(--black);
@@ -79,10 +96,6 @@ section a {
     margin-right: 1rem;
 
     display: inline-block;
-}
-
-.drizuma {
-    cursor: default;
 }
 
 section[data-slides] {
@@ -105,11 +118,15 @@ section[data-slides] {
     opacity: 1;
 }
 
+.coming-soon {
+    cursor: default;
+}
+
 /* ******************** */
-/* SAZINIES */
+/* CONTACT */
 /* ******************** */
 
-.sazinies {
+.contact {
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -117,59 +134,49 @@ section[data-slides] {
     padding: 5rem 4rem;
 }
 
-.sazinies h3 {
+.contact h3 {
     color: white;
 }
 
-.sazinies a {
+.contact a {
     color: white;
     margin-right: 0px;
     margin-top: 0.5rem;
 }
 
-.sazinies .section-body {
+.contact .contact-body {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
 
-.sazinies .section-footer {
+.contact .contact-footer {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
 }
 
-.sazinies .section-footer-links {
-    display: flex;
-    gap: 5px;
-}
-
-.sazinies .section-footer span {
+.contact .contact-footer span {
     background: white;
     width: 17.5px;
     height: 2px;
 }
 
-.slide-header {
+.contact .contact-footer-links {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    gap: 5px;
 }
 
-.technologies {
-    display: flex;
-    gap: 10px;
-    font-size: 1rem;
-    color: black;
-}
+/* ******************** */
+/* MEDIA QUERIES */
+/* ******************** */
 
 @media (max-width: 425px) {
     section {
         padding: 3rem 2rem;
         transition: ease-in-out 1.2s;
     }
-    .sazinies {
+    .contact {
         padding: 3rem 2rem;
         transition: ease-in-out 1.2s;
     }

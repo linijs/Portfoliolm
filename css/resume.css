@@ -79,7 +79,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* gap: 0.5rem; */
 }
 
 .header-div div a {
@@ -92,6 +91,10 @@ header {
 .header-div div a h4 {
     font-weight: 100;
 }
+
+/* ******************** */
+/* SECTIONS */
+/* ******************** */
 
 section {
     padding: 5rem 4rem;
@@ -123,7 +126,7 @@ section h2 {
 /* LEFT SECTION */
 /* ******************** */
 
-.skills {
+.section-left-skills {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -183,11 +186,11 @@ section h2 {
     font-size: 0.9rem;
 }
 
-.section-courses h4 {
+.section-right-courses h4 {
     margin-bottom: 1rem;
 }
 
-.section-courses div {
+.section-right-courses div {
     display: flex;
     flex-direction: column;
     gap: 0.6rem;
@@ -271,13 +274,17 @@ section h2 {
         padding-right: 6rem;
     }
 
-    .skills {
+    .section-left-skills {
         width: 75%;
     }
 
     .section-left p {
         max-width: 51rem;
     }
+
+    /* ******************** */
+    /* RIGHT SECTION */
+    /* ******************** */
 
     .section-right {
         padding-top: 11.5rem;

@@ -38,8 +38,6 @@ body {
 h1 {
     font-weight: var(--bold);
     font-size: 1.5rem;
-    background-blend-mode: difference;
-    /* padding-right: 2rem; */
 }
 
 h2,
