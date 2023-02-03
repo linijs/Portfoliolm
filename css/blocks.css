@@ -122,6 +122,14 @@ section[data-slides] {
     cursor: default;
 }
 
+.transition img {
+    vertical-align: -0.6rem;
+}
+
+.italics {
+    font-style: oblique;
+}
+
 /* ******************** */
 /* CONTACT */
 /* ******************** */

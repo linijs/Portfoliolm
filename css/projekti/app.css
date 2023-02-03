@@ -2,14 +2,13 @@
 @import "../transitions.css";
 
 :root {
-    /* layout */
     --desktop-font-size: 16px;
-    /* colors */
+
     --dark-gray: hsl(0, 0%, 63%);
     --black: hsl(0, 0%, 0%);
     --white: hsl(0, 0%, 100%);
     --very-dark-gray: hsl(0, 0%, 27%);
-    /* fontweight */
+
     --light: 500;
     --normal: 600;
     --bold: 700;
@@ -71,6 +70,8 @@ p {
     hyphens: auto;
     -webkit-hyphens: auto;
     word-spacing: -0.05em;
+    padding-bottom: 0.5rem;
+    /* text-indent: 5%; */
 }
 
 /* ******************** */
@@ -143,6 +144,11 @@ section .content-header {
 .other-image {
     display: block;
     max-width: 100%;
+}
+
+.content-images-link {
+    margin: 0rem;
+    display: block;
 }
 
 /* ******************** */
@@ -259,7 +265,7 @@ section .content-header {
         width: 100%;
     }
 
-    section .content {
+    .content {
         display: block;
     }
 
