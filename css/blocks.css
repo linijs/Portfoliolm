@@ -54,6 +54,21 @@ header {
 /* SLIDES */
 /* ******************** */
 
+.slide {
+    position: absolute;
+    visibility: hidden;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 300ms linear;
+    /* max-height: -10rem; */
+}
+
+.slide[data-active] {
+    visibility: visible;
+    position: unset;
+    opacity: 1;
+}
+
 .slide-header {
     display: flex;
     flex-wrap: wrap;
@@ -102,20 +117,6 @@ section[data-slides] {
     position: relative;
     display: grid;
     place-items: center;
-}
-
-.slide {
-    position: absolute;
-    visibility: hidden;
-    inset: 0;
-    opacity: 0;
-    transition: opacity 300ms linear;
-}
-
-.slide[data-active] {
-    visibility: visible;
-    position: unset;
-    opacity: 1;
 }
 
 .coming-soon {

@@ -182,6 +182,11 @@ section .content-header {
 ul {
     margin-left: 2rem;
     font-size: 14px;
+    word-spacing: -0.05em;
+}
+
+li {
+    margin-bottom: 0.5rem;
 }
 
 /* ******************** */
@@ -237,8 +242,8 @@ ul {
 /* ******************** */
 
 .appear {
-    -webkit-transition: all 1.2s;
-    transition: all 1.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
     opacity: 0;
     -webkit-transform: translateY(-40px);
     transform: translateY(-40px);
