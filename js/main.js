@@ -4,15 +4,13 @@ window.addEventListener("DOMContentLoaded", () => {
     const imgSlides = {
         mobile: [
             'url("./bildes/Yelp_Camp/yelp-camp-mobile.webp")',
-            'url("./bildes/SIA_ROBO/sia-robo-mobile.webp")',
-            'url("./bildes/Gadalaiki/gadalaiki-mobile.webp")',
+            'url("./bildes/AI_App/ai-mobile.webp")',
             'url("./bildes/Portfolio_2022/portfolio-2022-mobile.webp")',
             'url("./bildes/spotify-app-blurred-mobile.webp")',
         ],
         desktop: [
             'url("./bildes/Yelp_Camp/yelp-camp.webp")',
-            'url("./bildes/SIA_ROBO/sia-robo.webp")',
-            'url("./bildes/Gadalaiki/gadalaiki.webp")',
+            'url("./bildes/AI_App/ai.webp")',
             'url("./bildes/Portfolio_2022/portfolio-2022.webp")',
             'url("./bildes/spotify-app-blurred.webp")',
         ],

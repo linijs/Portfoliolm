@@ -19,7 +19,7 @@
             media="(prefers-color-scheme: dark)"
         />
         <link rel="stylesheet" href="../css/projekti/blocks.css" />
-        <title>Protfolio 2022</title>
+        <title>AI Image Generation App</title>
     </head>
     <body>
         <div class="transition transition-1 is-active"></div>
@@ -31,38 +31,35 @@
 
             <section class="content">
                 <div class="content-about">
-                    <h4>Personal website to showcase my projects</h4>
+                    <h4>AI art showcase and creation website</h4>
                 </div>
                 <div class="content-title">
-                    <h1>Portfolio 2023</h1>
+                    <h1>AI Image Generation App</h1>
                 </div>
                 <div class="content-year">
                     <h4>2023</h4>
                 </div>
                 <div class="content-technologies">
                     <div class="technologies">
-                        HTML
+                        React<span> // </span>Tailwind CSS<span> // </span
+                        >Javascript <span>//</span>
+                        MongoDB
                         <span>//</span>
-                        CSS
-                        <span>//</span>
-                        JavaScript
+                        Node.js
                     </div>
                 </div>
                 <div class="content-paragraph">
                     <p>
-                        Built with HTML, CSS, and JavaScript, my portfolio
-                        website is designed to be responsive, working across a
-                        variety of devices.
+                        In this website the user has the option to create, view,
+                        search and download artificial inteligence generated
+                        images that are based on unique user given prompts.
                     </p>
                 </div>
             </section>
 
             <section class="container reveal-hero">
                 <div class="img-block">
-                    <img
-                        src="../bildes/Portfolio_2022/portfolio-2022.webp"
-                        alt="Portfolio Home"
-                    />
+                    <img src="../bildes/AI_App/ai.webp" alt="AI app home" />
                 </div>
             </section>
 
@@ -73,10 +70,11 @@
                             <h2>The Challenge</h2>
                         </div>
                         <p>
-                            Primarily built with a grid layout it also features
-                            Javascript-controlled transitions between pages and
-                            navigational controls to make it easier for the user
-                            to view my projects.
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Eaque maiores, quaerat excepturi veniam ipsa
+                            itaque unde rerum temporibus deleniti nulla esse
+                            nihil. Facilis nihil quae minus debitis molestiae
+                            laboriosam quidem.
                         </p>
                     </div>
                 </div>
@@ -85,8 +83,8 @@
             <section class="container reveal">
                 <div class="img-block">
                     <img
-                        src="../bildes/Portfolio_2022/portfolio-projects.webp"
-                        alt="Portfolio projects page"
+                        src="../bildes/AI_App/ai-showcase.webp"
+                        alt="AI app showcase"
                     />
                 </div>
             </section>
@@ -98,11 +96,9 @@
                             <h2 class="">The Design</h2>
                         </div>
                         <p>
-                            I opted for a minimalistic design to ensure that the
-                            focus stays on the content. The site's made with
-                            pure CSS primarily with the grid layout to ensure
-                            that the design stays consistent on all screen
-                            sizes.
+                            I used <b>Tailwind CSS</b> for the sites front-end
+                            because of its ease of use and responsive features.
+                            The website is fully responsive on all screen sizes.
                         </p>
                     </div>
                 </div>
@@ -111,8 +107,8 @@
             <section class="container reveal">
                 <div class="img-block">
                     <img
-                        src="../bildes/Portfolio_2022/portfolio-cv.webp"
-                        alt="Portfolio resume page"
+                        src="../bildes/AI_App/ai-create.webp"
+                        alt="AI app Create page"
                     />
                 </div>
             </section>
@@ -121,15 +117,12 @@
                 <div class="text-container">
                     <div class="txt-right-p">
                         <p>
-                            In addition, my portfolio website also features a
-                            projects page with smooth scroll and navigation.
+                            In the "Create" page the user has to enter a name,
+                            prompt or use one of the many pre-determined prompts
+                            with the "Surprise me" button and generate an AI
+                            image. After they're satisfied with the end result
+                            they can share it on the site for others to see.
                         </p>
-                        <p>Planned additions:</p>
-                        <ul>
-                            <li>Page preloader;</li>
-                            <li>Language toggle;</li>
-                            <li>Light/dark mode toggle.</li>
-                        </ul>
                     </div>
                 </div>
             </section>
@@ -137,8 +130,8 @@
             <section class="container reveal">
                 <div class="img-block">
                     <img
-                        src="../bildes/Portfolio_2022/portfolio-mobile.webp"
-                        alt="Portfolio mobile"
+                        src="../bildes/AI_App/ai-home-tablet.webp"
+                        alt="AI Image Generator tablet"
                     />
                 </div>
             </section>
@@ -147,20 +140,77 @@
                 <div class="img-two">
                     <div class="img-block-left">
                         <img
-                            src="../bildes/Portfolio_2022/portfolio-projects-mobile.webp"
-                            alt="Portfolio porjects mobile"
+                            class="other-image"
+                            src="../bildes/AI_App/ai-showcase-mobile.webp"
+                            alt="AI Image Generator mobile showcase"
                         />
                     </div>
                     <div class="img-block-right">
                         <img
-                            src="../bildes/Portfolio_2022/portfolio-cv-mobile.webp"
-                            alt="Portfolio resume mobile"
+                            class="other-image"
+                            src="../bildes/AI_App/ai-create-mobile.webp"
+                            alt="AI Image Generator mobile create"
                         />
                     </div>
                 </div>
             </section>
 
-            <section class="text-container"></section>
+            <section class="text">
+                <div class="text-container">
+                    <div class="txt-left-p">
+                        <p>
+                            The site is built with
+                            <b> React.js, Node.js, Express.js and MongoDB</b>
+                            for storing information. The site is based on the
+                            use of
+                            <b> OpenAI's DALL-E API</b> which is a A deep
+                            learning model that generates images from text
+                            input. I also used a cloud-based image storage
+                            service <b>Cloudinary</b> to store user generated
+                            images.
+                        </p>
+                        <p>Planned additions:</p>
+                        <ul>
+                            <li>Community Showcase pagination.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="container reveal">
+                <div class="img-block">
+                    <img
+                        class="other-image-footer"
+                        src="../bildes/AI_App/ai-responsive.webp"
+                        alt="AI Image Generator mobile"
+                    />
+                </div>
+            </section>
+
+            <div>
+                <div class="text-container">
+                    <div class="link-wrapper">
+                        <a
+                            href="http://dall-e-image-generator.atwebpages.com/"
+                            target="_blank"
+                            ><div class="direct-link-flex">
+                                <h2>AI Image website</h2>
+                                <svg
+                                    width="50"
+                                    height="50"
+                                    viewBox="0 0 70 70"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M20.6665 49.0834V12.9167L49.0832 31.0001L20.6665 49.0834ZM25.8332 39.6542L39.3957 31.0001L25.8332 22.3459V39.6542Z"
+                                        fill="#000000"
+                                    />
+                                </svg></div
+                        ></a>
+                    </div>
+                </div>
+            </div>
 
             <footer>
                 <div class="container">
@@ -170,7 +220,7 @@
                                 <div class="projects-next">
                                     <a
                                         class="transition"
-                                        href="./yelp_camp.html"
+                                        href="./portfolio.html"
                                         >Next project
                                         <svg
                                             width="45"
@@ -187,12 +237,10 @@
                                 </div>
                                 <div class="projects-about">
                                     <p>
-                                        A production application for campground
-                                        creation, rating and viewing, built with
-                                        Node.js, MongoDB and Bootstrap 5. Secure
-                                        authentication and geocoding are key
-                                        features, allowing users to access and
-                                        use the application with ease.
+                                        Personal website to showcase my
+                                        projects. Built primarily with grid
+                                        layout. Featuring transitions,
+                                        interactive and responsive design.
                                     </p>
                                 </div>
                             </div>
@@ -233,12 +281,12 @@
                             </div>
                         </div>
                         <div class="footer-projects-right">
-                            <a href="./yelp_camp.html" class="next-project"
+                            <a href="./portfolio.html" class="next-project"
                                 ><div class="img-block">
                                     <img
                                         class="next-img"
-                                        src="../bildes/Yelp_Camp/next-project.webp"
-                                        alt="Next project Yelp Camp"
+                                        src="../bildes/Portfolio_2022/next-project.png"
+                                        alt="Next project Portfolio"
                                     /></div
                             ></a>
                         </div>

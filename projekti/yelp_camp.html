@@ -18,138 +18,312 @@
             href="../bildes/favicon-16x16-white.png"
             media="(prefers-color-scheme: dark)"
         />
-        <link rel="stylesheet" href="../css/projekti/app.css" />
+        <link rel="stylesheet" href="../css/projekti/blocks.css" />
         <title>Yelp Camp</title>
     </head>
     <body>
         <div class="transition transition-1 is-active"></div>
         <a id="top"></a>
         <main>
-            <h1><a class="transition" href="../index.html">l.m.</a></h1>
+            <span class="logo"
+                ><a class="transition" href="../index.html">l.m.</a></span
+            >
 
             <section class="content">
-                <div class="content-header appear">
-                    <div class="content-header-text item">
-                        <h2>Yelp Camp</h2>
+                <div class="content-about">
+                    <h4>
+                        Production app for campground creation, rating and
+                        viewing
+                    </h4>
+                </div>
+                <div class="content-title">
+                    <h1>Yelp Camp</h1>
+                </div>
+                <div class="content-year">
+                    <h4>2022</h4>
+                </div>
+                <div class="content-technologies">
+                    <div class="technologies">
+                        HTML
+                        <span>//</span>
+                        Bootstrap 5
+                        <span>//</span>
+                        JavaScript
+                        <span>//</span>
+                        MongoDB
+                        <span>//</span>
+                        Node.js
+                    </div>
+                </div>
+                <div class="content-paragraph">
+                    <p>
+                        Yelp Camp is a full-stack web application which main
+                        functions are campground viewing and creating. The user
+                        has the option to leave a rating or edit and delete
+                        their own campgrounds.
+                    </p>
+                </div>
+            </section>
+
+            <section class="container reveal-hero">
+                <div class="img-block">
+                    <img
+                        src="../bildes/Yelp_Camp/yelp-camp.webp"
+                        alt="Yelp Camp Home"
+                    />
+                </div>
+            </section>
+
+            <section class="text">
+                <div class="text-container">
+                    <div class="txt-right">
+                        <div class="txt-title reveal">
+                            <h2>The Challenge</h2>
+                        </div>
                         <p>
                             In this personal project, my primary focus was to
                             create a full-stack web application that provides a
                             secure and responsive environment for the user.
-                            Users can view, rate, create, edit, and delete their
-                            own campgrounds.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="container reveal">
+                <div class="img-block">
+                    <img
+                        src="../bildes/Yelp_Camp/yelp-camp-showpage.webp"
+                        alt="Yelp Camp all campgrounds"
+                    />
+                </div>
+            </section>
+
+            <section class="text">
+                <div class="text-container">
+                    <div class="txt-left">
+                        <div class="txt-title reveal">
+                            <h2 class="">The Design</h2>
+                        </div>
+                        <p>
+                            Front-end of the website was built with the CSS
+                            framework <b>Bootstrap 5</b> because of its ease of
+                            use and responsive features.
                         </p>
                         <p>
-                            The front-end of the website was built with the CSS
-                            framework Bootstrap 5 because of its ease of use and
-                            responsive features.
+                            The main focus of the design was to display all the
+                            necessary information to the user.
                         </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="container reveal">
+                <div class="img-block">
+                    <img
+                        src="../bildes/Yelp_Camp/yelp-camp-campground.webp"
+                        alt="Yelp Camp campround show page"
+                    />
+                </div>
+            </section>
+
+            <section class="text">
+                <div class="text-container">
+                    <div class="txt-right-p">
                         <p>
                             Authentication and authorization are encrypted and
-                            stored via a Node.js tool called Passport.
+                            stored via a <b>Node.js</b> tool called
+                            <b>Passport</b>.
                         </p>
                         <p>
+                            <b>Node.js</b> was used for server-side scripting.<b
+                                >Express</b
+                            >
+                            and <b>MongoDB</b> were employed to create a
+                            full-stack <b>JavaScript</b> application. As for the
+                            deployed sites database I opted to use
+                            <b>Mongo Atlas</b>.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="container reveal">
+                <div class="img-block">
+                    <img
+                        src="../bildes/Yelp_Camp/yelp-camp-create.webp"
+                        alt="Yelp Camp create new campground form"
+                    />
+                </div>
+            </section>
+
+            <section class="text">
+                <div class="text-container">
+                    <div class="txt-left-p">
+                        <p>
                             I implemented the authentication with measures in
-                            place to ensure common security issues, such as SQL
-                            Injection and XSS.
+                            place to ensure common security issues, such as
+                            <b>SQL Injection </b> and <b>XSS</b>.
                         </p>
                         <p>
                             After logging in the user also has an option to
                             upload an image to the website, which will be stored
-                            in a cloud database tool called Cloudinary.
+                            in a cloud database tool called <b>Cloudinary</b>.
                         </p>
-                        <p>
-                            Node.js was used for server-side scripting. Express
-                            and MongoDB were employed to create a full-stack
-                            JavaScript application. As for the deployed sites
-                            database I opted to use Mongo Atlas.
-                        </p>
-                        <p>
-                            I utilized the Mapbox API to both determine the
-                            location of campgrounds and pin them on a map.
-                            Furthermore, an interactive cluster map of all the
-                            campgrounds was created using the Mapbox API.
-                        </p>
-                    </div>
-
-                    <div class="content-header-info">
-                        <div>
-                            <h3>Izmantotās tehnoloģijas:</h3>
-                            <div class="technologies">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
-                            </div>
-                        </div>
-                        <!-- <div class="year">
-                            <h4>2022</h4>
-                        </div> -->
                     </div>
                 </div>
+            </section>
 
-                <div class="content-images">
+            <section class="container reveal">
+                <div class="img-block">
                     <img
-                        class="other-image"
-                        src="../bildes/Yelp_Camp/yelp-camp.webp"
-                        alt="Yelp Camp Home"
-                    />
-                    <img
-                        class="other-image"
-                        src="../bildes/Yelp_Camp/yelp-camp-all-campgrounds.webp"
-                        alt="Yelp Camp all campgrounds"
-                    />
-                    <img
-                        class="other-image"
-                        src="../bildes/Yelp_Camp/yelp-camp-campground.webp"
-                        alt="Yelp Camp campround show page"
-                    />
-                    <img
-                        class="other-image"
-                        src="../bildes/Yelp_Camp/yelp-camp-new-campground.webp"
-                        alt="Yelp Camp create new campground form"
-                    />
-                    <img
-                        class="other-image"
-                        src="../bildes/Yelp_Camp/yelp-camp-register.webp"
-                        alt="Yelp Camp login form"
+                        src="../bildes/Yelp_Camp/yelp-camp-tablet.webp"
+                        alt="Yelp Camp home page on tablet devices"
                     />
                 </div>
             </section>
 
-            <div class="appear"></div>
+            <section class="text">
+                <div class="text-container">
+                    <div class="txt-right-p">
+                        <p>
+                            Lastly, I utilized the <b>Mapbox API</b> to both
+                            determine the location of campgrounds and pin them
+                            on a map. Furthermore, an interactive cluster map of
+                            all the campgrounds was also created using the API.
+                        </p>
+                    </div>
+                </div>
+            </section>
 
-            <section class="content-footer">
-                <div class="content-footer-images">
+            <section class="container reveal">
+                <div class="img-block">
                     <img
-                        class="other-image-footer"
                         src="../bildes/Yelp_Camp/yelp-camp-responsive.webp"
                         alt="Yelp Camp mobile"
                     />
                 </div>
+            </section>
 
-                <div class="content-footer-text">
-                    <div class="next">
-                        <a class="transition" href="./sia_robo.html"
-                            >Next project
-                            <svg
-                                width="24"
-                                height="24"
-                                viewBox="0 0 70 70"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    d="M20.6665 49.0834V12.9167L49.0832 31.0001L20.6665 49.0834ZM25.8332 39.6542L39.3957 31.0001L25.8332 22.3459V39.6542Z"
-                                    fill="#000000"
-                                /></svg
-                        ></a>
+            <section class="container reveal">
+                <div class="img-two">
+                    <div class="img-block-left">
+                        <img
+                            src="../bildes/Yelp_Camp/yelp-camp-register-mobile.webp"
+                            alt="Yelp Camp register form"
+                        />
                     </div>
-
-                    <div class="back">
-                        <a class="transition" href="../index.html">Back home</a>
-                        <a href="#top">To top</a>
+                    <div class="img-block-right">
+                        <img
+                            src="../bildes/Yelp_Camp/yelp-camp-login-mobile.webp"
+                            alt="Yelp Camp login form"
+                        />
                     </div>
                 </div>
             </section>
+
+            <div>
+                <div class="text-container">
+                    <div class="link-wrapper">
+                        <a
+                            href="https://yelpcamp-0p3y.onrender.com/"
+                            target="_blank"
+                            ><div class="direct-link-flex">
+                                <h2>Yelp Camp website</h2>
+                                <svg
+                                    width="50"
+                                    height="50"
+                                    viewBox="0 0 70 70"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M20.6665 49.0834V12.9167L49.0832 31.0001L20.6665 49.0834ZM25.8332 39.6542L39.3957 31.0001L25.8332 22.3459V39.6542Z"
+                                        fill="#000000"
+                                    />
+                                </svg></div
+                        ></a>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <div class="container">
+                    <div class="footer-projects">
+                        <div class="footer-projects-left">
+                            <div>
+                                <div class="projects-next">
+                                    <a class="transition" href="./ai_app.html"
+                                        >Next project
+                                        <svg
+                                            width="45"
+                                            height="45"
+                                            viewBox="0 0 65 65"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M20.6665 49.0834V12.9167L49.0832 31.0001L20.6665 49.0834ZM25.8332 39.6542L39.3957 31.0001L25.8332 22.3459V39.6542Z"
+                                                fill="#ffffff"
+                                            /></svg
+                                    ></a>
+                                </div>
+                                <div class="projects-about">
+                                    <p>
+                                        A website for showcasing and creating
+                                        unique artificially created art based on
+                                        users given prompts.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="footer-buttons">
+                                <div class="back">
+                                    <a class="transition" href="../index.html"
+                                        ><svg
+                                            width="50"
+                                            height="50"
+                                            viewBox="0 0 50 50"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M21.5 10.7075L30.25 18.5825V32.25H26.75V21.75H16.25V32.25H12.75V18.5825L21.5 10.7075ZM21.5 6L4 21.75H9.25V35.75H19.75V25.25H23.25V35.75H33.75V21.75H39L21.5 6Z"
+                                                fill="#ffffff"
+                                            /></svg
+                                        >Back home</a
+                                    >
+                                </div>
+                                <div class="top">
+                                    <a href="#top"
+                                        ><svg
+                                            width="40"
+                                            height="40"
+                                            viewBox="0 0 50 50"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M20.6665 49.0834V12.9167L49.0832 31.0001L20.6665 49.0834ZM25.8332 39.6542L39.3957 31.0001L25.8332 22.3459V39.6542Z"
+                                                fill="#ffffff"
+                                            /></svg
+                                        >To top</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-projects-right">
+                            <a href="./ai_app.html" class="next-project"
+                                ><div class="img-block">
+                                    <img
+                                        class="next-img"
+                                        src="../bildes/AI_App/next-project.webp"
+                                        alt="Next project AI App"
+                                    /></div
+                            ></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </main>
     </body>
     <script src="../js/transitions.js"></script>

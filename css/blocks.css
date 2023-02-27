@@ -143,6 +143,12 @@ section[data-slides] {
     padding: 5rem 4rem;
 }
 
+.contact-lower {
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+}
+
 .contact h3 {
     color: white;
 }

@@ -1,12 +1,18 @@
-const appear = document.querySelector(".appear");
-const cb = function (entries) {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add("inview");
-        } else {
-            entry.target.classList.remove("inview");
+function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+
+    for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 200;
+
+        if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
         }
-    });
-};
-const io = new IntersectionObserver(cb);
-io.observe(appear);
+        // else {
+        //     reveals[i].classList.remove("active");
+        // }
+    }
+}
+
+window.addEventListener("scroll", reveal);
