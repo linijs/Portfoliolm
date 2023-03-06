@@ -37,6 +37,13 @@ body {
     color: var(--very-dark-gray);
 }
 
+main {
+    min-height: 100vh;
+    background: var(--white);
+    position: relative;
+    z-index: 1;
+}
+
 h1 {
     font-weight: var(--normal);
     color: var(--black);
@@ -213,6 +220,13 @@ li {
 .direct-link-flex {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.direct-link-flex div {
+    display: flex;
+    flex-direction: row;
 }
 
 /* ******************** */
@@ -220,7 +234,11 @@ li {
 /* ******************** */
 
 footer {
+    position: sticky;
     background-color: var(--black);
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
 footer a {
@@ -254,7 +272,6 @@ footer p {
     width: 60%;
     margin-right: 4.5em;
     flex-direction: column;
-    /* align-items: flex-start; */
     justify-content: space-between;
 }
 
@@ -262,6 +279,18 @@ footer p {
     display: flex;
     font-size: 2em;
     text-decoration: none;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    max-width: 17rem;
+}
+
+a div {
+    pointer-events: none;
+}
+
+.transition svg {
+    pointer-events: none;
 }
 
 .projects-about {
@@ -321,26 +350,31 @@ footer p {
         margin-left: 0;
         transform: translateY(-50%) translateX(-50%);
     }
+
     .container {
         padding: 0rem 5rem;
     }
+
     .content {
         padding: 10rem 5rem 2.5rem 5rem;
         grid-template-columns: 1.5fr 3fr;
         grid-template-rows: auto auto auto;
     }
+
     .content-about {
         grid-column-end: 2;
         grid-column-start: 1;
         grid-row-end: 3;
         grid-row-start: 2;
     }
+
     .content-title {
         grid-column-end: 3;
         grid-column-start: 2;
         grid-row-end: 2;
         grid-row-start: 1;
     }
+
     .content-year {
         grid-column-end: 2;
         grid-column-start: 1;
@@ -348,18 +382,21 @@ footer p {
         grid-row-start: 1;
         text-align: start;
     }
+
     .content-technologies {
         grid-column-end: 2;
         grid-column-start: 1;
         grid-row-end: 4;
         grid-row-start: 3;
     }
+
     .content-paragraph {
         grid-column-end: 3;
         grid-column-start: 2;
         grid-row-end: 4;
         grid-row-start: 2;
     }
+
     .txt-right,
     .txt-left,
     .txt-right-p,
@@ -377,11 +414,19 @@ footer p {
         width: auto;
     }
 
+    /* .footer-buttons div a {
+        font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    } */
+
     .img-two {
         display: flex;
         flex-direction: column;
         padding-top: 0.5rem;
         gap: 0.5rem;
+    }
+
+    .top {
+        margin-top: 0rem;
     }
 }
 
@@ -389,6 +434,7 @@ footer p {
     .container {
         padding: 0rem 1rem;
     }
+
     .content {
         padding: 5rem 1rem 2.5rem 1rem;
         grid-column-gap: 2em;
@@ -396,16 +442,20 @@ footer p {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto auto auto;
     }
+
     .content-about {
         grid-row-start: 3;
         grid-row-end: 4;
     }
+
     .content-title {
         grid-column-start: 1;
     }
+
     .content-title h1 {
         font-size: 3rem;
     }
+
     .content-year {
         grid-column-start: 2;
         grid-column-end: 3;
@@ -413,12 +463,14 @@ footer p {
         grid-row-end: 4;
         text-align: end;
     }
+
     .content-technologies {
         grid-column-start: 1;
         grid-column-end: 3;
         grid-row-start: 4;
         grid-row-end: 5;
     }
+
     .content-paragraph {
         grid-column-start: 1;
         grid-row-end: 3;
@@ -437,10 +489,25 @@ footer p {
         width: 100%;
         margin-right: 0;
     }
+
     .footer-projects-left {
         width: 100%;
         margin-right: 0;
         margin-top: 4rem;
+    }
+
+    .top {
+        margin-top: 0.5rem;
+    }
+
+    .to-top {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .reveal .img-block img {
+        transform: scale(1.3);
     }
 }
 
@@ -459,7 +526,6 @@ footer p {
 
 *::-webkit-scrollbar-thumb {
     background-color: var(--black);
-    /* border-radius: 20px; */
     border: 2px solid var(--white);
 }
 
@@ -474,7 +540,19 @@ footer p {
     transition: 1s all ease;
 }
 
+.reveal-text {
+    position: relative;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
 .reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.reveal-text.active {
     transform: translateY(0);
     opacity: 1;
 }

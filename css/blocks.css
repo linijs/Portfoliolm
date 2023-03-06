@@ -59,8 +59,36 @@ header {
     visibility: hidden;
     inset: 0;
     opacity: 0;
-    transition: opacity 300ms linear;
     /* max-height: -10rem; */
+}
+
+.slide div {
+    animation: 2s ease 0s 1 hero;
+}
+
+.slide p {
+    animation: 2.5s ease 0s 1 hero;
+}
+
+.slide a {
+    animation: 3s ease 0s 1 hero;
+}
+
+.about h3 {
+    animation: 1.5s ease 0s 1 hero;
+}
+
+.about-p {
+    animation: 2s ease 0s 1 hero;
+}
+
+@keyframes hero {
+    0% {
+        transform: translateX(-10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 .slide[data-active] {
@@ -129,6 +157,10 @@ section[data-slides] {
 
 .transition svg {
     vertical-align: -0.4rem;
+}
+
+.transition svg {
+    pointer-events: none;
 }
 
 /* ******************** */
